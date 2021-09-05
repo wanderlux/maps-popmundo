@@ -15,12 +15,27 @@
     <h2>Popmundo worldmap</h2>
     <div id="map" class="map"></div>
     <script type="text/javascript">
+      
+      const vectorLayer = new VectorLayer({
+  source: new VectorSource({
+    url: 'cities.geojson',
+    format: new GeoJSON(),
+  }),
+  style: function (feature) {
+    style.getText().setText(feature.get('name'));
+    return style;
+  },
+});
+      
+      
+      
       var map = new ol.Map({
         target: 'map',
         layers: [
           new ol.layer.Tile({
             source: new ol.source.OSM()
-          })
+          }),
+          vectorLayer
         ],
         view: new ol.View({
           center: ol.proj.fromLonLat([37.41, 8.82]),
@@ -30,3 +45,7 @@
     </script>
   </body>
 </html>
+
+
+
+
