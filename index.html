@@ -4,15 +4,15 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.6.1/css/ol.css" type="text/css">
     <style>
       .map {
-        height: 400px;
+        height: 1000px;
         width: 100%;
       }
     </style>
     <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.6.1/build/ol.js"></script>
-    <title>OpenLayers example</title>
+    <title>Popmundo worldmap</title>
   </head>
   <body>
-    <h2>My Map</h2>
+    <h2>Popmundo worldmap</h2>
     <div id="map" class="map"></div>
     <script type="text/javascript">
       var map = new ol.Map({
@@ -24,7 +24,7 @@
         ],
         view: new ol.View({
           center: ol.proj.fromLonLat([37.41, 8.82]),
-          zoom: 4
+          zoom: 2
         })
       });
     </script>
