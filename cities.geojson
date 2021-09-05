@@ -1,0 +1,55 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Berlin"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.38134765625,
+          52.522905940278065
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Barcelona"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1533203125,
+          41.409775832009565
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Madrid"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.7353515625,
+          40.413496049701955
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Oporto"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.6187744140625,
+          41.14970617453726
+        ]
+      }
+    }
+  ]
+}
